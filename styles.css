@@ -1,0 +1,301 @@
+/* General Styling */
+/* Apply Font to Whole Website */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.9);
+    padding: 15px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #c0a062;
+}
+
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Hide sections initially */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+/* Show when in view */
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Home Section */
+#home {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.home-content {
+    max-width: 600px;
+    margin: auto;
+}
+.profile-img {
+    width: 250px;
+    border-radius: 50%;
+    filter: brightness(0.8);
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Profile Image */
+.profile-pic {
+    width: 250px;  /* Increase size (adjust as needed) */
+    height: 250px; /* Keep it square */
+    border-radius: 50%; /* Keep it circular */
+    object-fit: cover; /* Ensures image fills the frame */
+    margin-bottom: 20px;
+}
+
+/* Increase Font Size on Home Page */
+#home h1 {
+    font-size: 48px; /* Adjust for larger heading */
+}
+
+#home h2 {
+    font-size: 28px; /* Subtitle */
+}
+
+#home p {
+    font-size: 18px; /* Paragraphs */
+}
+/*about*/
+#about {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.about-content {
+    max-width: 600px;
+    margin: auto;
+}
+/* Styling for About Section */
+#about {
+    text-align: center;
+    padding: 80px 10%;
+    color: #EAE0D5; /* Earthy neutral tones */
+}
+
+/* Layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-text {
+    max-width: 50%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Image */
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Subtle hover effect */
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Skills */
+#skills {
+    text-align: center; /* Ensures the title is centered */
+    padding: 80px 10%;
+    color: #EAE0D5; /* Neutral earthy tone */
+}
+
+#skills h2 {
+    text-align: center; /* Explicitly centers the title */
+    margin-bottom: 30px; /* Adds spacing between title and skills layout */
+    font-size: 2.5rem; /* Increases size for better visibility */
+}
+#skills {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.skill:hover {
+    transform: scale(1.05);
+}
+.skill {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+.skill i {
+    font-size: 40px;
+    color: #c0a062;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.project {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 40%;
+    height: auto;
+}
+
+.project-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    color: #c0a062;
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #c0a062;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center; /* Centers everything inside */
+    padding: 80px 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#contact h1 {
+    font-size: 2rem; /* Makes the title bigger */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#contact {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.contact-info {
+    font-size: 1.5rem; /* Slightly bigger */
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers all contact items */
+    align-items: center; 
+    gap: 30px; /* Adds spacing between contact items */
+    margin-top: 20px;
+    text-align: center; /* Ensures alignment */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.3em;
+    color: #ddd;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.contact-item i {
+    font-size: 1.8rem; /* Makes icons bigger */
+    color: #c0a062; /* Earthy gold tone */
+}
+
+.contact-item:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
